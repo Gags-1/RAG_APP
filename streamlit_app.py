@@ -79,6 +79,8 @@ if uploaded_file is not None and st.session_state.vector_db is None:
 
             You should only answer the user based on the following context and navigate the user
             to open the right page number to know more.
+
+            If the user specifically says they donot understand something, make it simpler and make it understanble by giving examps or real life scenarios, ONLY IF THE USER ASKS
         """))
         st.session_state.messages.append(AIMessage(content="I have processed the PDF. How can I help you with its content?"))
 
