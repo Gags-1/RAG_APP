@@ -1,4 +1,4 @@
-# RAG_APP 🔍📄
+# AskMyDocs 🔍📄
 
 A Retrieval-Augmented Generation (RAG) chatbot using Streamlit and Qdrant.
 
