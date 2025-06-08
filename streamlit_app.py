@@ -11,7 +11,7 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 # --- Streamlit UI Setup ---
 st.set_page_config(page_title="Dynamic RAG Chatbot", page_icon="🤖")
-st.title("Dynamic RAG Chatbot with User-Uploaded PDF")
+st.title("AskMyDocs📃")
 st.write("Upload a PDF, then ask questions based on its content!")
 
 # --- Configuration and Initialization ---

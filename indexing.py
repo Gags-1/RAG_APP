@@ -23,15 +23,14 @@ text_splitter = RecursiveCharacterTextSplitter(
 split_docs = text_splitter.split_documents(documents=docs)
 
 # Vector Embeddings
-embedding_model = GoogleGenerativeAIEmbeddings( # Changed
-    model="models/embedding-001" # Changed: Use a suitable Gemini embedding model
+embedding_model = GoogleGenerativeAIEmbeddings(
+    model="models/embedding-001" 
 )
 
-# Using [embedding_model] create embeddings of [split_docs] and store in DB
 
 vector_store = QdrantVectorStore.from_documents(
     documents=split_docs,
-    url="http://vector-db:6333", # Make sure this URL is correct for your Qdrant instance
+    url="http://vector-db:6333",
     collection_name="learning_vectors",
     embedding=embedding_model
 )
